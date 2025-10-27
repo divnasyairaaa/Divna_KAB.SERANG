@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- Menentukan tipe dokumen HTML5 -->
+<html lang="id">
+<!-- Menandakan bahasa dokumen adalah Bahasa Indonesia -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Mengatur encoding karakter agar teks tampil dengan benar -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Membuat tampilan web responsif di perangkat mobile -->
+
+  <title>Sistem Informasi Statistik Kabupaten Serang</title>
+  <!-- Judul halaman yang tampil di tab browser -->
+
+  <style>
+    /* Bagian CSS internal untuk mengatur tampilan halaman */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Bagian header (judul dan logo) */
+    header {
+      text-align: center;
+      padding: 20px;
+      border-bottom: 3px solid #b22222;
+    }
+
+    header img {
+      width: 100px;
+      height: auto;
+    }
+
+    /* Gaya untuk judul utama */
+    h1 {
+      margin: 5px 0;
+      color: #000;
+      font-size: 22px;
+    }
+
+    /* Gaya untuk subjudul */
+    h2 {
+      margin: 0;
+      color: #444;
+      font-size: 18px;
+    }
+
+    /* Container utama berisi sidebar dan konten */
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+
+    /* Sidebar di sebelah kiri */
+    .sidebar {
+      width: 25%;
+      padding: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Area konten utama di sebelah kanan */
+    .content {
+      width: 75%;
+    }
+
+    /* Gaya untuk tabel data */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    /* Gaya untuk setiap sel tabel */
+    th,
+    td {
+      border: 1px solid #333;
+      padding: 8px;
+      text-align: center;
+    }
+
+    /* Warna latar belakang untuk header tabel */
+    th {
+      background-color: #dcdcdc;
+    }
+
+    /* Gaya opsional untuk footer tabel */
+    tfoot {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    /* Gaya untuk footer halaman */
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 10px;
+      border-top: 2px solid #b22222;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Bagian tubuh halaman -->
+
+  <header>
+    <!-- Bagian atas halaman berisi logo dan judul -->
+    <img src="logo kabupaten serang.png" alt="Logo Kabupaten Serang">
+    <!-- Menampilkan logo Kabupaten Serang -->
+    <h1>SISTEM INFORMASI STATISTIK</h1>
+    <h2>KABUPATEN SERANG</h2>
+  </header>
+
+  <div class="container">
+    <!-- Pembungkus utama untuk sidebar dan konten -->
+
+    <div class="sidebar">
+      <!-- Menu navigasi samping kiri -->
+      <p>Penduduk</p>
+      <p>Geografi dan Iklim</p>
+      <p>Pemerintahan</p>
+      <p>Sosial</p>
+      <p>Pertanian</p>
+      <p>Industri</p>
+      <p>Pariwisata dan Keuangan</p>
+    </div>
+
+    <div class="content">
+      <!-- Bagian utama halaman, menampilkan tabel data -->
+      <h3 style="text-align:center;">Tabel Penduduk</h3>
+      <table>
+        <thead>
+          <!-- Header kolom tabel -->
+          <tr>
+            <th>Kecamatan</th>
+            <th>Luas Wilayah (km²)</th>
+            <th>Jumlah Penduduk</th>
+            <th>Kepadatan Penduduk (jiwa/km²)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- Isi data tabel -->
+          <tr><td>Anyar</td><td>55,31</td><td>51.280</td><td>926,99</td></tr>
+          <tr><td>Binuang</td><td>49,21</td><td>46.850</td><td>952,80</td></tr>
+          <tr><td>Bojonegara</td><td>43,22</td><td>59.300</td><td>1.372,35</td></tr>
+          <tr><td>Cikande</td><td>35,10</td><td>127.500</td><td>3.632,00</td></tr>
+          <tr><td>Ciruas</td><td>41,02</td><td>97.410</td><td>2.376,72</td></tr>
+          <tr><td>Jawilan</td><td>30,15</td><td>66.480</td><td>2.204,14</td></tr>
+          <tr><td>Kragilan</td><td>33,40</td><td>119.330</td><td>3.571,56</td></tr>
+          <tr><td>Kramatwatu</td><td>47,40</td><td>129.250</td><td>2.727,43</td></tr>
+          <tr><td>Pabuaran</td><td>28,90</td><td>41.780</td><td>1.445,85</td></tr>
+          <tr><td>Petir</td><td>40,35</td><td>52.210</td><td>1.293,80</td></tr>
+          <tr><td>Tanara</td><td>32,11</td><td>34.550</td><td>1.076,08</td></tr>
+          <tr><td>Tirtayasa</td><td>37,24</td><td>35.400</td><td>950,37</td></tr>
+          <tr><td>Waringinkurung</td><td>38,55</td><td>63.700</td><td>1.653,31</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer>
+    <!-- Bagian bawah halaman berisi informasi kontak -->
+    Pemerintah Kabupaten Serang<br>
+    Jl. Veteran No.1, Serang, Provinsi Banten | Telp: (0254) 200555
+  </footer>
+
+</body>
+
+</html>
